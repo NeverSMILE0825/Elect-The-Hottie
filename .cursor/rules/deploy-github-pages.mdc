@@ -1,0 +1,28 @@
+---
+description: After codebase updates, commit, push to GitHub, and republish GitHub Pages
+alwaysApply: true
+---
+
+# Deploy to GitHub Pages after updates
+
+This static site is hosted at **https://neversmile0825.github.io/Elect-The-Hottie/** via GitHub Pages from the `main` branch of https://github.com/NeverSMILE0825/Elect-The-Hottie.git.
+
+## After any substantive site change
+
+When you finish updating site files (`index.html`, `styles.css`, `script.js`, `assets/`, etc.):
+
+1. Commit the changes (ask first only if the user has not already asked to deploy/publish; if they asked to update the live site or previously requested auto-publish, proceed).
+2. Push to `origin main`.
+3. Confirm GitHub Pages will rebuild from `main` `/` (no separate publish step — push is enough).
+4. Tell the user the live URL: https://neversmile0825.github.io/Elect-The-Hottie/
+
+## Auth / tooling notes
+
+- Prefer `C:\Users\Administrator\gh-cli\bin\gh.exe` for GitHub CLI (PATH may point at a wrong npm `gh` package).
+- Use account `NeverSMILE0825` (`gh auth switch -u NeverSMILE0825` if needed).
+- Do not force-push unless the user explicitly asks.
+
+## Do not
+
+- Change Pages source away from `main` `/` without asking.
+- Commit secrets or local-only junk.
